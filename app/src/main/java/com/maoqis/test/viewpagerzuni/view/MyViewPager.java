@@ -7,7 +7,7 @@ import android.util.AttributeSet;
  * Created by bjmaoqisheng on 2018/1/2.
  */
 
-public class MyViewPager extends BounceBackViewPager {
+public class MyViewPager extends DirectionalViewPager {
     public MyViewPager(Context context) {
         super(context);
     }

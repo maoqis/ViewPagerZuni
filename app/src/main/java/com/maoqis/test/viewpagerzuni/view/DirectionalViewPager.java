@@ -1070,6 +1070,11 @@ public class DirectionalViewPager extends ViewPager {
         }
     }
 
+    @Override
+    public int getCurrentItem() {
+        return mCurItem;
+    }
+
     private class PagerObserver extends DataSetObserver {
         PagerObserver() {
         }

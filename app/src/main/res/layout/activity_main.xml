@@ -16,7 +16,8 @@
     <com.maoqis.test.viewpagerzuni.view.MyViewPager
         android:id="@+id/bbv"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="match_parent"
+
       >
 
     </com.maoqis.test.viewpagerzuni.view.MyViewPager>

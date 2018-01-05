@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.maoqis.test.viewpagerzuni.view.DirectionalViewPager;
 import com.maoqis.test.viewpagerzuni.view.MyViewPager;
 
 import java.util.ArrayList;
@@ -36,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         mBbv = (MyViewPager) findViewById(R.id.bbv);
+        mBbv.setOrientation(DirectionalViewPager.VERTICAL);
         mLlTop = (LinearLayout) findViewById(R.id.ll_top);
 
-        mBbv.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        mBbv.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -47,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
                 integer = adapter.getData().get(position);
+                final int currentItem = mBbv.getCurrentItem();
+                Log.d(TAG, "onPageSelected: "+currentItem);
             }
 
             @Override
