@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoqis.test.viewpagerzuni.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <com.maoqis.test.viewpagerzuni.view.MyViewPager
+        android:id="@+id/bbv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+      >
+
+    </com.maoqis.test.viewpagerzuni.view.MyViewPager>
+
+</LinearLayout>
